@@ -47,7 +47,7 @@ Erstellen Sie darin die Datei `docker-compose.yml` mit diesem Inhalt:
        - shopwaredb:mysql
 
       # hier bitte das gleiche Passwort, wie bei shopwaredb angeben
-      command: sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -pbitte_aendern'
+      command: sh -c 'exec mysql -h"$$MYSQL_PORT_3306_TCP_ADDR" -P"$$MYSQL_PORT_3306_TCP_PORT" -uroot -pbitte_aendern'
 
     shopware:
       image: kurthuwig/shopware:latest
